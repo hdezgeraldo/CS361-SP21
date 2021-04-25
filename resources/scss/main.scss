@@ -1,0 +1,20 @@
+// Custom Variables
+@import "./partials/variables";
+
+// Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// Animate
+@import "../vendor/animate/animate.min.css";
+
+// Fontawesome
+@import "../vendor/fontawesome/scss/fontawesome.scss";
+@import "../vendor/fontawesome/scss/solid.scss";
+@import "../vendor/fontawesome/scss/brands.scss";
+
+// Custom Styles
+@import "./partials/general";
+@import "./partials/structure";
+
+// Partials
+@import "./partials/game";

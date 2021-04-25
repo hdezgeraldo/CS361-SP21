@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+
+        &.delayfade {
+            opacity: 1;
+        }
+    }
+}
+
+body {
+    letter-spacing: 0.06px;
+    // overflow-x: hidden; horizontal-scroll issue
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+.h1 {
+    font-weight: $regular;
+    line-height: 5.4rem;
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+}
+
+h2,
+.h2 {
+    font-weight: $regular;
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: -0.95px;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: $medium;
+    letter-spacing: 0;
+    line-height: 27px;
+}
+
+.d-flex-centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    transition: color 150ms;
+
+    &.link {
+        font-weight: $medium;
+        font-size: 1.3rem;
+        letter-spacing: 0;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+embed,
+iframe {
+    max-width: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+li {
+    font-size: 1.6rem;
+}
+
+ol,
+ul {
+    margin-bottom: 2rem;
+}
+
+p,
+ul,
+ol {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.absolute-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shared Blocks */
+
+//404 page
+body.error404 {
+}
+
+//************************************//
+//************ ANIMATIONS ************//
+//************************************//
+
+// GF Spinner
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,15 @@
+body {
+}
+
+header {
+    // DESKTOP ONLY STYLES
+    @include media-breakpoint-up($desktop-breakpoint) {
+    }
+
+    // Mobile Only Styles
+    @include media-breakpoint-down($mobile-breakpoint) {
+    }
+}
+
+footer {
+}
