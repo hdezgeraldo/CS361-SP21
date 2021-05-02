@@ -7,7 +7,7 @@
         <title>Alien Invaders</title>
 
         <!-- Fontawesome -->
-        <link rel="stylesheet" href="/resources/vendor/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="../resources/vendor/fontawesome/css/all.min.css">
 
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,17 +15,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/favicons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+        <link rel="manifest" href="../favicons/site.webmanifest">
+        <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="../favicons/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+        <meta name="msapplication-config" content="../favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="/assets/css/main-min.css" />
+        <link rel="stylesheet" href="../assets/css/main-min.css" />
 
     </head>
 
