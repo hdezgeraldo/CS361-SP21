@@ -1,0 +1,27 @@
+.start-button {
+    position: relative;
+    z-index: 1;
+    background: none;
+    border: none;
+    font-family: "Press Start 2P";
+    color: $gold_light;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    & > a {
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        z-index: -1;
+        border-bottom: 15px solid $blue_light;
+    }
+}

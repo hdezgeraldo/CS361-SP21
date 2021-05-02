@@ -7,14 +7,11 @@
 // Animate
 @import "../vendor/animate/animate.min.css";
 
-// Fontawesome
-@import "../vendor/fontawesome/scss/fontawesome.scss";
-@import "../vendor/fontawesome/scss/solid.scss";
-@import "../vendor/fontawesome/scss/brands.scss";
-
 // Custom Styles
 @import "./partials/general";
 @import "./partials/structure";
+@import "./partials/prototype";
+@import "./partials/buttons";
 
 // Partials
 @import "./partials/game";

@@ -4,14 +4,17 @@ $white: #ffffff;
 
 // design key
 $grey_light: #f4f3f3;
-$grey_dark: #241f21;
-$green_light: #3bae49;
-$green_dark: #10312b;
+$blue_light: #1c30b9;
+$gold_light: #efb012;
 
 // FONTS / TYPOGRAPHY
 //font-family: 'Barlow', serif;
 // -- available weights
-//      300, 400, 500, 600, 700
+//      300, 400, 500, 600, 700, 800
+
+//font-family: 'Press Start 2P', cursive;
+// -- available weights
+//      400
 
 // fix to allow rem measurements in factor of 10 instead of 16
 html {
@@ -19,13 +22,13 @@ html {
 }
 
 $ff_main: "Barlow", sans-serif;
-$ff_heading: "Barlow", serif;
+$ff_heading: "Press Start 2P", serif;
 
 $font-family-base: $ff_main;
 $font-size-base: 1.4rem;
 $font-weight-base: 400;
 $line-height-base: 2;
-$body-color: $grey_dark;
+$body-color: $white;
 $paragraph-margin-bottom: 2rem;
 $small-font-size: 1.2rem;
 
@@ -51,9 +54,9 @@ $semi-bold: 600;
 $bold: 700;
 
 // links
-$link-color: $green_light;
+$link-color: $gold_light;
 $link-decoration: none;
-$link-hover-color: $green_dark;
+$link-hover-color: $white;
 $link-hover-decoration: none;
 
 // buttons

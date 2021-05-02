@@ -10,11 +10,12 @@ let results = 0;
 
 for (let i = 0; i < 225; i++) {
     const square = document.createElement("div");
-    square.textContent = i;
+    square.classList.add("square");
+    // square.textContent = i;
     grid.appendChild(square);
 }
 
-const squares = Array.from(document.querySelectorAll(".grid div"));
+const squares = Array.from(document.querySelectorAll(".grid .square"));
 
 // prettier-ignore
 const alienInvaders = [
@@ -27,6 +28,8 @@ function drawInvaders() {
     for (let i = 0; i < alienInvaders.length; i++) {
         if (!aliensRemoved.includes(i)) {
             squares[alienInvaders[i]].classList.add("invader");
+            squares[alienInvaders[i]].innerHTML =
+                "<i class='fas fa-alien-monster'></i>";
         }
     }
 }
@@ -40,6 +43,7 @@ function removeInvaders() {
 }
 
 squares[currentShooterIndex].classList.add("shooter");
+squares[currentShooterIndex].innerHTML = "<i class='fas fa-starfighter'></i>";
 
 function moveShooter(e) {
     squares[currentShooterIndex].classList.remove("shooter");
@@ -54,6 +58,8 @@ function moveShooter(e) {
             break;
     }
     squares[currentShooterIndex].classList.add("shooter");
+    squares[currentShooterIndex].innerHTML =
+        "<i class='fas fa-starfighter'></i>";
 }
 
 document.addEventListener("keydown", moveShooter);
@@ -100,6 +106,7 @@ function moveInvaders() {
 
     if (aliensRemoved.length === alienInvaders.length) {
         resultDisplay.innerHTML = "YOU WIN";
+        resultDisplay.append("<button class='btn'>Hello</button>");
         clearInterval(invadersID);
     }
 }
@@ -116,6 +123,8 @@ function shoot(event) {
 
         if (currentLaserIndex >= 0) {
             squares[currentLaserIndex].classList.add("laser");
+            squares[currentLaserIndex].innerHTML =
+                "<i class='fas fa-grip-lines-vertical'></i>";
 
             console.log(currentLaserIndex);
             console.log(squares[currentLaserIndex]);
@@ -125,7 +134,11 @@ function shoot(event) {
                 resultDisplay.innerHTML = results;
                 squares[currentLaserIndex].classList.remove("laser");
                 squares[currentLaserIndex].classList.remove("invader");
+
                 squares[currentLaserIndex].classList.add("boom");
+                squares[currentLaserIndex].innerHTML =
+                    "<i class='fad fa-badge'></i>";
+
                 setTimeout(
                     () => squares[currentLaserIndex].classList.remove("boom"),
                     300

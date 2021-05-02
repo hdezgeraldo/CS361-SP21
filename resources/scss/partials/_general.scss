@@ -21,17 +21,40 @@ body {
 h1,
 .h1 {
     font-weight: $regular;
-    line-height: 5.4rem;
-    font-size: 4.5rem;
+    line-height: 10rem;
+    font-size: 9rem;
     letter-spacing: -1px;
+    color: $gold_light;
 }
 
 h2,
 .h2 {
     font-weight: $regular;
-    font-size: 3rem;
-    line-height: 4rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+    color: $white;
+}
+
+h3,
+.h3 {
+    text-transform: uppercase;
+    font-weight: $regular;
+    font-size: 2rem;
+    line-height: 3rem;
     letter-spacing: -0.95px;
+    color: $gold_light;
+}
+
+h4,
+.h4 {
+    text-transform: uppercase;
+    font-weight: $regular;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    color: $white;
 }
 
 p {
@@ -39,6 +62,7 @@ p {
     font-weight: $medium;
     letter-spacing: 0;
     line-height: 27px;
+    color: $white;
 }
 
 .d-flex-centering {
@@ -49,12 +73,7 @@ p {
 
 a {
     transition: color 150ms;
-
-    &.link {
-        font-weight: $medium;
-        font-size: 1.3rem;
-        letter-spacing: 0;
-    }
+    color: $gold_light;
 }
 
 img {

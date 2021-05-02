@@ -1,0 +1,93 @@
+main.prototype {
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    section.intro-screen {
+        max-width: 800px;
+
+        .instruct-modal {
+            .modal-content {
+                background: $black;
+
+                .modal-body {
+                    .game-instructions {
+                        h4 > strong {
+                            color: $gold_light;
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    .start-button {
+                        font-family: "Press Start 2P";
+                        color: $gold_light;
+
+                        &:after {
+                            bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.game-over-screen {
+        h1 {
+            color: red;
+        }
+    }
+
+    .bg-spiral {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 33%;
+        max-width: 500px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    section.movie-screen {
+        .starring-list {
+            padding-left: 0;
+
+            li {
+                font-family: "Press Start 2P";
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                padding-bottom: 5px;
+
+                i {
+                    padding-right: 1rem;
+                    color: $gold_light;
+                }
+            }
+        }
+
+        .details-col {
+            .start-button {
+                align-self: center;
+            }
+        }
+
+        .movie-col {
+            display: flex;
+            align-items: center;
+
+            img {
+                transform: scale(1);
+                transition: all 250ms ease;
+                border: 8px solid $white;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
