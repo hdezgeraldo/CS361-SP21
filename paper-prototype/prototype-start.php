@@ -1,6 +1,6 @@
-<?php include '../header.php'; ?>
+<?php include 'header.php'; ?>
 
-<main class="prototype d-flex-centering" style="background-image:url('/assets/img/bg.jpg');">
+<main class="prototype d-flex-centering" style="background-image:url('assets/img/bg.jpg');">
 
     <section class="intro-screen">
 
@@ -89,4 +89,4 @@
 
 </main>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>
