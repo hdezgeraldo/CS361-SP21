@@ -27,7 +27,7 @@
 
             <div class="offset-lg-1 col-lg-4 movie-col order-1 order-md-2">
 
-                <img src="/assets/img/War_of_the_Worlds_2005_poster.jpg" alt="" class="shadow-lg">
+                <img src="assets/img/War_of_the_Worlds_2005_poster.jpg" alt="" class="shadow-lg">
 
             </div>
 

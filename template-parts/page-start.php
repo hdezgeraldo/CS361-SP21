@@ -40,7 +40,7 @@
 
                                 <div class="col-md-6">
                                     <div class="game-instructions">
-                                        <img src="/assets/img/arrow-keys.png" alt="">
+                                        <img src="assets/img/arrow-keys.png" alt="">
 
                                         <h4 class="pt-3 text-center">Move with the <strong>left</strong> and <strong>right</strong> arrow keys</h4>
                                     </div>
@@ -48,7 +48,7 @@
 
                                 <div class="col-md-6">
                                     <div class="game-instructions">
-                                        <img src="/assets/img/spacebar-key.png" alt="">
+                                        <img src="assets/img/spacebar-key.png" alt="">
 
                                         <h4 class="pt-3 text-center">Shoot your laser with the <strong>spacebar</strong> key</h4>
                                     </div>
@@ -57,7 +57,7 @@
 
                                 <div class="col-12">
                                     <div class="game-instructions">
-                                        <img src="/assets/img/destroy-alien.png" alt="">
+                                        <img src="assets/img/destroy-alien.png" alt="">
 
                                         <h4 class="pt-3 text-center">Defeat all the aliens to move on to the next <strong>LEVEL</strong></h4>
                                     </div>
