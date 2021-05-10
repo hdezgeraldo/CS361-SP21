@@ -1,7 +1,5 @@
-## CS 361 Spring 2021
+## Group Name: Team ByteMe
 
-## Group: Byte Me
+# Alien Invaders
 
-# Theme Name
-
-These are the files for my project for CS361.
+These are the files for the group project from CS361. This is a JS version of the "Space Invaders" game. My game will feature 3 different levels, and after each level you will be presented information from a Wiki scrapper.

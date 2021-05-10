@@ -383,6 +383,14 @@
       "oAP" : "\/paper-prototype\/prototype-start.php",
       "oF" : 0
     },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -402,13 +410,35 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/resources\/js\/components\/app.js" : {
+    "\/resources\/js\/components\/Alien.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 1,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/resources\/js\/components\/app-min.js",
+      "oAP" : "\/resources\/js\/components\/Alien-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/js\/components\/GameEngine.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 1,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/resources\/js\/components\/GameEngine-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/js\/components\/Player.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 1,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/resources\/js\/components\/Player-min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -2135,6 +2165,38 @@
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/template-parts\/page-game-over.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/page-game-over.php",
+      "oF" : 0
+    },
+    "\/template-parts\/page-game-play.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/page-game-play.php",
+      "oF" : 0
+    },
+    "\/template-parts\/page-intermission.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/page-intermission.php",
+      "oF" : 0
+    },
+    "\/template-parts\/page-start.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/page-start.php",
+      "oF" : 0
     }
   },
   "hooks" : [

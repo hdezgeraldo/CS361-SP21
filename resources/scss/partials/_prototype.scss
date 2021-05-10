@@ -3,6 +3,11 @@ main.prototype {
     height: 100vh;
     width: 100vw;
     position: relative;
+    animation-name: move-background;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
 
     section.intro-screen {
         max-width: 800px;

@@ -65,6 +65,16 @@ p {
     color: $white;
 }
 
+// hide all templates
+main.prototype > section {
+    display: none;
+}
+
+// only display template with 'active' class
+.active {
+    display: block !important;
+}
+
 .d-flex-centering {
     display: flex;
     justify-content: center;
