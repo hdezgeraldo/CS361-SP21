@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/.htaccess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.htaccess",
+      "oF" : 0
+    },
     "\/.prettierrc" : {
       "cB" : 0,
       "ft" : 8192,
@@ -118,6 +126,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/placeholder.png" : {
+      "ft" : 32768,
+      "iS" : 9560,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/placeholder.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/spacebar-key.png" : {
       "ft" : 32768,
       "iS" : 33761,
@@ -127,19 +148,6 @@
       "oIPL" : 1,
       "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/img\/War_of_the_Worlds_2005_poster.jpg" : {
-      "ft" : 16384,
-      "iS" : 20892,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/img\/War_of_the_Worlds_2005_poster.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -2141,13 +2149,13 @@
       "oAP" : "\/resources\/vendor\/fontawesome\/webfonts\/fa-solid-900.woff2",
       "oF" : 0
     },
-    "\/resources\/vendor\/jquery\/jquery-3.6.0.slim.min.js" : {
+    "\/resources\/vendor\/jquery\/jquery-3.6.0.min.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 1,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/resources\/vendor\/jquery\/jquery-3.6.0.slim.min-min.js",
+      "oAP" : "\/resources\/vendor\/jquery\/jquery-3.6.0.min-min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0

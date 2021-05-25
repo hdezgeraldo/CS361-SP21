@@ -68,11 +68,8 @@ p {
 // hide all templates
 main.prototype > section {
     display: none;
-}
-
-// only display template with 'active' class
-.active {
-    display: block !important;
+    opacity: 0;
+    transition: all 1s ease;
 }
 
 .d-flex-centering {

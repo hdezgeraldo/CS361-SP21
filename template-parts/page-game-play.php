@@ -3,7 +3,7 @@
 
         <h4 class="results">0</h4>
 
-        <button class="next-button text-white start-button">Next Level</button>
+        <button class="intermission-button text-white start-button">Click to Proceed</button>
 
         <div class="grid"></div>
 

@@ -9,6 +9,12 @@ main.prototype {
     animation-iteration-count: infinite;
     position: absolute;
 
+    & > .active {
+        display: block !important;
+        opacity: 1;
+        transition: all 1s ease;
+    }
+
     section.intro-screen {
         max-width: 800px;
 
