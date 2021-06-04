@@ -7,6 +7,7 @@
             <h1 class="">GAME OVER</h1>
 
             <button class="home-button mt-5 start-button">Return Home</button>
+
         </div>
 
     </div>

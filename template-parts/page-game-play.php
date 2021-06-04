@@ -3,7 +3,7 @@
 
         <h4 class="results">0</h4>
 
-        <button class="intermission-button text-white start-button">Click to Proceed</button>
+        <button class="intermission-button text-white start-button blink">Click to Proceed</button>
 
         <div class="grid"></div>
 

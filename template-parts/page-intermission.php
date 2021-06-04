@@ -7,7 +7,7 @@
         <div class="row">
 
             <div class="col-lg-8 details-col d-flex flex-column order-1 order-md-2">
-                <h3>Level <span class="ajax-lvl-number">#</span> of 3</h3>
+                <h3 class="ajax-lvl">Level <span class="ajax-lvl-number">#</span> of 3</h3>
 
                 <div class="h2 ajax-title">Lorem ipsum</div>
 
@@ -22,7 +22,7 @@
                 <div class="button-wrap d-flex justify-content-center">
                     <button class="home-button mt-4 start-button">Return Home</button>
 
-                    <button class="next-lvl-button mt-4 start-button ml-5">Proceed</button>
+                    <button class="next-lvl-button mt-4 start-button ml-5 blink">Proceed</button>
                 </div>
 
             </div>

@@ -16,7 +16,7 @@
             <h3 class="text-white text-center pt-5 pb-5">A Space Invaders inspired game that faces you off with aliens from three different alien invasion movies</h3>
 
             <!-- Button trigger modal -->
-            <button type="button" class="start-button" data-toggle="modal" data-target="#instructionalModal">Start Game</button>
+            <button type="button" class="start-button blink" data-toggle="modal" data-target="#instructionalModal">Start Game</button>
 
             <!-- Modal -->
             <div class="modal instruct-modal fade" id="instructionalModal" tabindex="-1" role="dialog" aria-labelledby="instructionalModalTitle" aria-hidden="true">

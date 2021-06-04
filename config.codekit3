@@ -113,6 +113,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/edge-of-tomorrow.png" : {
+      "ft" : 32768,
+      "iS" : 540558,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/edge-of-tomorrow.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/game1-bg.png" : {
       "ft" : 32768,
       "iS" : 3469,
@@ -121,6 +134,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/indepdence-day-bg.png" : {
+      "ft" : 32768,
+      "iS" : 33606,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/indepdence-day-bg.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,

@@ -46,7 +46,6 @@ $(document).ready(function () {
      *---------------------------------------------------------------*/
     GameEngine.prototype.update = function () {
         if (this.player.alive && this.currentLevel < 3) {
-            // Anytime key is pressed during gameplay
             $(document).keydown((e) => {
                 this.movePlayer(e);
             });
@@ -55,7 +54,6 @@ $(document).ready(function () {
 
             // Switch levels
             $(".intermission-button").click(() => {
-                // Check current level and start AJAX call
                 this.switchLevels(this.currentLevel);
 
                 // Hide Game Screen
@@ -67,10 +65,9 @@ $(document).ready(function () {
 
             // Start Next Round
             $(".next-lvl-button").click(() => {
-                // Reset Game
                 this.resetGame();
 
-                // Show Game Screen
+                // Re-start game
                 this.screens.eq(1).toggleClass("active");
                 this.startInvaders();
 
@@ -79,7 +76,6 @@ $(document).ready(function () {
                 this.screens.eq(2).css("display", "none");
             });
 
-            // Shoot Laser
             $(document).keydown((e) => {
                 this.shootLaser(e);
             });
@@ -160,7 +156,7 @@ $(document).ready(function () {
             if (this.aliensDefeated) {
                 $(".intermission-button").css("display", "inline-block");
             }
-        }, 500);
+        }, 350);
     };
 
     GameEngine.prototype.moveInvaders = function () {
@@ -203,15 +199,6 @@ $(document).ready(function () {
         ) {
             this.player.alive = false;
             clearInterval(this.aliens.invadersID);
-        }
-
-        // If aliens reach end of grid
-        // ** NEED TO DEBUG THIS **
-        for (let i = 0; i < this.aliens.invadersCoord.length; i++) {
-            if (this.aliens.invadersCoord[i] > this.squares.length) {
-                this.player.alive = false;
-                clearInterval(this.aliens.invadersID);
-            }
         }
 
         // If you eliminate all aliens
@@ -301,6 +288,11 @@ $(document).ready(function () {
                     },
                     dataType: "json",
                     success: function (data) {
+                        $(".gameplay-screen").css(
+                            "background-image",
+                            "url('assets/img/indepdence-day-bg.png')"
+                        );
+
                         // grab image value
                         var imageURL = Object.values(data);
 
@@ -313,10 +305,7 @@ $(document).ready(function () {
                         // Update level
                         $(".ajax-lvl-number").text(level);
 
-                        // Update Lists (will wait for teammate)
-                        $(".starring-list").html(
-                            "<li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li>"
-                        );
+                        $(".starring-list").html("");
                     }
                 });
 
@@ -357,7 +346,11 @@ $(document).ready(function () {
                     },
                     dataType: "json",
                     success: function (data) {
-                        console.log(data);
+                        for (var i = 4; i < 8; i++) {
+                            var actorList = `<li class='list-unstyled'><i class='fas fa-film'></i>${data[i]}</li>`;
+
+                            $(".starring-list").append(actorList);
+                        }
                     }
                 });
 
@@ -374,6 +367,11 @@ $(document).ready(function () {
                     },
                     dataType: "json",
                     success: function (data) {
+                        $(".gameplay-screen").css(
+                            "background-image",
+                            "url('assets/img/edge-of-tomorrow.png')"
+                        );
+
                         // grab image value
                         var imageURL = Object.values(data);
 
@@ -386,16 +384,13 @@ $(document).ready(function () {
                         // Update level
                         $(".ajax-lvl-number").text(level);
 
-                        // Update Lists (will wait for teammate)
-                        $(".starring-list").html(
-                            "<li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li>"
-                        );
+                        $(".starring-list").html("");
                     }
                 });
 
                 // wiki text scrapper service
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "https://cs361-text-scraper-chenall.wl.r.appspot.com/data/",
                     data: {
                         url: "https://en.wikipedia.org/wiki/Independence_Day_(1996_film)"
@@ -420,6 +415,26 @@ $(document).ready(function () {
                         $(".ajax-intro").text(introText);
                     }
                 });
+
+                // wiki list scrapper service
+                $.ajax({
+                    type: "POST",
+                    url: "https://list-scraper.ue.r.appspot.com/?url=https://en.wikipedia.org/wiki/Independence_Day_(1996_film)",
+                    data: {
+                        url: "https://en.wikipedia.org/wiki/Independence_Day_(1996_film)"
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+
+                        for (var i = 4; i < 8; i++) {
+                            var actorList = `<li class='list-unstyled'><i class='fas fa-film'></i>${data[i]}</li>`;
+
+                            $(".starring-list").append(actorList);
+                        }
+                    }
+                });
+
                 break;
 
             // Level (3): Live, Die, Repeat
@@ -433,6 +448,8 @@ $(document).ready(function () {
                     },
                     dataType: "json",
                     success: function (data) {
+                        $(".next-lvl-button").css("display", "none");
+
                         // grab image value
                         var imageURL = Object.values(data);
 
@@ -440,21 +457,19 @@ $(document).ready(function () {
                         $(".ajax-image").attr("src", imageURL[0]);
 
                         // Update title
-                        $(".ajax-title").text("Live, Die, Repeat");
+                        $(".ajax-title").text("Edge of Tomorrow");
 
                         // Update level
-                        $(".ajax-lvl-number").text(level);
+                        $(".ajax-lvl").text("YOU HAVE WON!").addClass("blink");
 
                         // Update Lists (will wait for teammate)
-                        $(".starring-list").html(
-                            "<li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li><li class='list-unstyled'><i class='fas fa-film'></i>Tom Cruise</li>"
-                        );
+                        $(".starring-list").html("");
                     }
                 });
 
                 // wiki text scrapper service
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "https://cs361-text-scraper-chenall.wl.r.appspot.com/data/",
                     data: {
                         url: "https://en.wikipedia.org/wiki/Edge_of_Tomorrow"
@@ -479,6 +494,26 @@ $(document).ready(function () {
                         $(".ajax-intro").text(introText);
                     }
                 });
+
+                // wiki list scrapper service
+                $.ajax({
+                    type: "POST",
+                    url: "https://list-scraper.ue.r.appspot.com/?url=https://en.wikipedia.org/wiki/Edge_of_Tomorrow",
+                    data: {
+                        url: "https://en.wikipedia.org/wiki/Edge_of_Tomorrow"
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+
+                        for (var i = 9; i < 12; i++) {
+                            var actorList = `<li class='list-unstyled'><i class='fas fa-film'></i>${data[i]}</li>`;
+
+                            $(".starring-list").append(actorList);
+                        }
+                    }
+                });
+
                 break;
         }
     };
